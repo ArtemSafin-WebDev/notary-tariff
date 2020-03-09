@@ -1,0 +1,133 @@
+.page-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    top: 4.4rem;
+    z-index: 100;
+}
+
+.page-header__row {
+    display: flex;
+    align-items: center;
+}
+
+.page-header__logo-link {
+    margin-right: auto;
+}
+
+.page-header__logo-image {
+    width: 22rem;
+    height: auto;
+}
+
+.page-header__contacts {
+    margin-right: 3.4rem;
+    text-align: right;
+    position: relative;
+    z-index: 1100;
+}
+
+.page-header__contacts-phone {
+    font-weight: 800;
+    font-size: 1.9rem;
+    transition: color 0.2s;
+    display: block;
+    margin-bottom: 0.5rem;
+
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+    &:hover {
+        color: var(--light-blue);
+    }
+
+    .menu-open & {
+        &:link,
+        &:visited {
+            color: black;
+        }
+    }
+}
+
+.page-header__contacts-email {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    transition: color 0.2s;
+    display: block;
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+    &:hover {
+        color: var(--light-blue);
+    }
+
+    .menu-open & {
+        &:link,
+        &:visited {
+            color: var(--light-blue);
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.page-header__request-call {
+    font-weight: 800;
+    font-size: 1.5rem;
+    border-radius: 0.8rem;
+    padding: 2rem 4.2rem;
+    background-color: var(--light-blue);
+    margin-right: 5.6rem;
+    transition: background-color 0.2s;
+    position: relative;
+    z-index: 1100;
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+    &:hover {
+        background-color: darken(#058fc3, 10%);
+    }
+}
+
+.page-header__burger {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1100;
+    & > span {
+        width: 3.2rem;
+        height: 2px;
+        background-color: #fff;
+        margin-bottom: 0.8rem;
+        display: block;
+        transition: transform .2s, opacity .2s, background-color .2s;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .menu-open & {
+        & > span {
+            background-color: black;
+            
+            &:nth-child(1) {
+                transform: translateY(1rem) rotate(-45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: translateY(-1rem) rotate(45deg);
+            }
+        }
+    }
+}

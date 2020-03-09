@@ -1,0 +1,83 @@
+.main-nav {
+    position: fixed;
+    background-color: #fff;
+    z-index: 1000;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    transform: translateZ(0);
+    visibility: hidden;
+    opacity: 0;
+    transition: transform .6s, opacity .3s, visibility 0s linear .6s;
+
+    .menu-open & {
+        transform: translateZ(0) translateX(-100%);
+        visibility: visible;
+        opacity: 1;
+        transition: all .6s;
+    }
+}
+
+
+.overlay {
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(black, .6);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility 0s linear .3s;
+    .menu-open & {
+        opacity: 1;
+        visibility: visible;
+        transition: all .3s;
+    }
+}
+
+
+.main-nav__inner {
+    height: 100%;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 13rem;
+    padding-bottom: 4rem;
+}
+
+.main-nav__list {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 16rem;
+}
+
+
+
+.main-nav__list-item {
+    margin-bottom: 3rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+.main-nav__link {
+    font-size: 3.6rem;
+    font-weight: 800;
+    transition: color .2s;
+    @include breakpoint(large-desktop) {
+        font-size: 3rem;
+    }
+    &:link,
+    &:visited {
+        color: black;
+    }
+
+    &:hover {
+        color: var(--light-blue);
+    }
+}

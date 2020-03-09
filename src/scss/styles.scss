@@ -1,0 +1,20 @@
+@import 'vendor';
+@import 'mixins';
+@import 'global';
+@import 'layout';
+@import 'text';
+@import 'page-header';
+@import 'page-footer';
+@import 'visual-editor';
+@import 'main-nav';
+@import 'modal';
+
+// Blocks styles
+
+@import 'blocks/intro';
+@import 'blocks/about-project';
+@import 'blocks/calculator';
+@import 'blocks/faq';
+@import 'blocks/apply';
+@import 'blocks/services';
+
