@@ -3164,9 +3164,9 @@ img.lazyload:not([src]) {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
-  font-family: 'object-fit: cover; object-position: left;'; }
+  -o-object-position: left center;
+     object-position: left center;
+  font-family: 'object-fit: cover; object-position: left center;'; }
 
 .services {
   padding-top: 11rem;
