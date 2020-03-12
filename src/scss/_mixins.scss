@@ -29,7 +29,6 @@
     }
 }
 
-
 @mixin fullpageBG {
     position: relative;
     background: none;
@@ -55,6 +54,11 @@
     object-fit: cover;
     object-position: top;
     font-family: 'object-fit: cover; object-position: top;';
+}
+@mixin objectFitCoverLeft() {
+    object-fit: cover;
+    object-position: top;
+    font-family: 'object-fit: cover; object-position: left;';
 }
 
 @mixin objectFitContain() {

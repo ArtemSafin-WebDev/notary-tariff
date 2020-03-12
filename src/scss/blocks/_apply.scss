@@ -101,7 +101,7 @@
     top: 0;
     bottom: 0;
     right: calc((100vw - 100%) / 2 * -1);
-    background-color: red;
+    background-color: var(--light-blue);
     z-index: -1;
 }
 
@@ -113,5 +113,5 @@
     top: 0;
     width: 100%;
     height: 100%;
-    @include objectFitCover();
+    @include objectFitCoverLeft();
 }

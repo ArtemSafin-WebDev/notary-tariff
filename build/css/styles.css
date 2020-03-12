@@ -3153,7 +3153,7 @@ img.lazyload:not([src]) {
   top: 0;
   bottom: 0;
   right: calc((100vw - 100%) / 2 * -1);
-  background-color: red;
+  background-color: var(--light-blue);
   z-index: -1; }
 
 .apply__image {
@@ -3164,9 +3164,9 @@ img.lazyload:not([src]) {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  font-family: 'object-fit: cover; object-position: center;'; }
+  -o-object-position: top;
+     object-position: top;
+  font-family: 'object-fit: cover; object-position: left;'; }
 
 .services {
   padding-top: 11rem;
