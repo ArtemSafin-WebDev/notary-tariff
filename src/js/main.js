@@ -7,6 +7,14 @@ import modals from './modals';
 import forms from './forms';
 
 document.addEventListener('DOMContentLoaded', function() {
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        const intro = document.querySelector('.intro');
+        if (intro) {
+            console.log('Setting min height');
+            intro.style.minHeight = document.documentElement.clientHeight + 'px';
+        }
+    }
+
     polyfills();
     detectTouch();
     customSelects();
@@ -18,4 +26,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 window.addEventListener('load', function() {
     document.body.classList.add('loaded');
-})
+});

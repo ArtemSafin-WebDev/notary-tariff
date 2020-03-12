@@ -1,11 +1,15 @@
 .intro {
     min-height: 80rem;
-    padding: 5rem 0;
+    padding-top: 12rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     color: white;
+    @include breakpoint(large-desktop) {
+        min-height: 100vh;
+    }
     &::before {
         content: '';
         position: absolute;
@@ -26,7 +30,11 @@
     top: 0;
     bottom: 0;
     z-index: -1;
-   
+    @include breakpoint(small-mobile) {
+        right: calc((100vw - 100%) / 2 * -1);
+        left: calc((100vw - 100%) / 2 * -1);
+        top: 8.8rem;
+    }
 }
 
 .intro__bg-photo {
@@ -42,8 +50,12 @@
     font-weight: 800;
     font-size: 5rem;
     text-transform: uppercase;
-    margin-bottom: 3rem;
-    max-width: 50rem;
+    margin-bottom: 1.6rem;
+    @include breakpoint(small-mobile) {
+        font-size: 2.4rem;
+        line-height: 1.4;
+        margin-bottom: 1.9rem;
+    }
 }
 
 
@@ -54,9 +66,16 @@
 
 
 .intro__text {
-    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.75;
     font-weight: 400;
     margin-bottom: 3rem;
+    max-width: 60rem;
+    @include breakpoint(small-mobile) {
+        max-width: none;
+        font-size: 1.4rem;
+        margin-bottom: 2.7rem;
+    }
 }
 
 
@@ -70,13 +89,18 @@
     background-color: #fff;
     display: inline-block;
     transition: background-color .2s, color .2s;
+    @include breakpoint(small-mobile) {
+        
+    }
     &:link,
     &:visited {
         color: var(--dark-blue);
     }
 
     &:hover {
-        background-color: var(--light-blue);
-        color: white;
+      
+        color: var(--light-blue);
     }
+
+   
 }

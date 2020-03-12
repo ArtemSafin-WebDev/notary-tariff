@@ -2,7 +2,10 @@
     font-size: 1.6rem;
     color: #555555;
     line-height: 1.75;
-
+    @include breakpoint(small-mobile) {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
     p:not([class]) {
         margin-bottom: 2rem;
         &:last-child {
@@ -20,6 +23,9 @@
             position: relative;
             padding-left: 2rem;
             margin-bottom: 1rem;
+            @include breakpoint(small-mobile) {
+                padding-left: 1.5rem;
+            }
             &:last-child {
                 margin-bottom: 0;
             }
@@ -32,6 +38,9 @@
                 border-radius: 50%;
                 left: 0;
                 background-color: var(--light-blue);
+                @include breakpoint(small-mobile) {
+                    top: .8rem;
+                }
             }
         }
     }

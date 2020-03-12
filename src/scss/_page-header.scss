@@ -5,6 +5,9 @@
     width: 100%;
     top: 4.4rem;
     z-index: 100;
+    @include breakpoint(small-mobile) {
+        top: 2.4rem;
+    }
 }
 
 .page-header__row {
@@ -14,11 +17,15 @@
 
 .page-header__logo-link {
     margin-right: auto;
+    flex-shrink: 0;
 }
 
 .page-header__logo-image {
     width: 22rem;
     height: auto;
+    @include breakpoint(small-mobile) {
+        width: 17rem;
+    }
 }
 
 .page-header__contacts {
@@ -26,6 +33,9 @@
     text-align: right;
     position: relative;
     z-index: 1100;
+    @include breakpoint(mobile) {
+        display: none;
+    }
 }
 
 .page-header__contacts-phone {
@@ -88,14 +98,23 @@
     transition: background-color 0.2s;
     position: relative;
     z-index: 1100;
+    text-align: center;
+    @include breakpoint(mobile) {
+        display: none;
+    }
     &:link,
     &:visited {
         color: white;
     }
 
     &:hover {
-        background-color: darken(#058fc3, 10%);
+        background-color: var(--blue-hover);
     }
+    &:active {
+        background-color: var(--blue-active);
+    }
+
+
 }
 
 .page-header__burger {

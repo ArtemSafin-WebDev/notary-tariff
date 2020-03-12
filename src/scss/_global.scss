@@ -7,10 +7,12 @@
 }
 
 :root {
-    --max-container-width: 1240px;
+    --max-container-width: 1172px;
     --content-padding: 20px;
     --dark-blue: #1f2252;
     --light-blue: #058fc3;
+    --blue-hover: #00739f;
+    --blue-active: #005d81;
     --montserrat: 'Montserrat', sans-serif;
 }
 
@@ -18,6 +20,18 @@ html {
     box-sizing: border-box;
     font-size: 10px;
     @include noHighlight();
+
+
+    @include breakpoint(tablet) {
+        font-size: 9px;
+    }
+    @include breakpoint(mobile) {
+        font-size: 8px;
+    }
+
+    @include breakpoint(small-mobile) {
+        font-size: 10px;
+    }
 }
 
 body {

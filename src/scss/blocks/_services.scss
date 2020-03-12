@@ -2,6 +2,12 @@
     padding-top: 11rem;
     padding-bottom: 12rem;
     position: relative;
+    @include breakpoint(laptop) {
+        padding: 8rem 0;
+    }
+    @include breakpoint(small-mobile) {
+        padding: 4.5rem 0;
+    }
     &::before {
         content: '';
         position: absolute;
@@ -20,6 +26,10 @@
     font-weight: 800;
     font-size: 3.6rem;
     margin-bottom: 2rem;
+    @include breakpoint(small-mobile) {
+        font-size: 2.4rem;
+        margin-bottom: 1.8rem;
+    }
 }
 
 
@@ -35,6 +45,9 @@
     display: flex;
     flex-wrap: wrap;
     margin: -1.5rem;
+    @include breakpoint(small-mobile) {
+        margin: -1rem;
+    }
 }
 
 
@@ -43,6 +56,14 @@
     width: 33.33%;
     display: flex;
     flex-direction: column;
+    @include breakpoint(mobile) {
+        width: 50%;
+    }
+
+    @include breakpoint(small-mobile) {
+        width: 100%;
+        padding: 1rem;
+    }
 }
 
 
@@ -82,6 +103,10 @@
 .services__card-inner {
     padding: 4rem;
     padding-bottom: 0;
+    @include breakpoint(small-mobile) {
+        padding: 2rem;
+        padding-top: 3rem;
+    }
 }
 
 
@@ -90,6 +115,11 @@
     height: 8rem;
     flex-shrink: 0;
     margin-bottom: 3rem;
+    @include breakpoint(small-mobile) {
+        width: 6.8rem;
+        height: 6.8rem;
+        margin-bottom: 2rem;
+    }
 
     & > svg,
     & > img {
@@ -108,6 +138,10 @@
     line-height: 1.2;
     margin-bottom: 3rem;
     color: black;
+    @include breakpoint(small-mobile) {
+        font-size: 1.8rem;
+        margin-bottom: 1.8rem;
+    }
 }
 
 
@@ -122,6 +156,10 @@
     padding: 2.4rem 4rem;
     transition: background-color .2s;
     position: relative;
+    @include breakpoint(small-mobile) {
+        font-size: 1.4rem;
+        padding: 1.5rem 2rem;
+    }
     &::before {
         content: '';
         top: 0;
@@ -131,6 +169,10 @@
         position: absolute;
         background-color: #f2f2f2;
         transition: background-color .2s;
+        @include breakpoint(small-mobile) {
+            left: 2rem;
+            right: 2rem;
+        }
     }
 
    

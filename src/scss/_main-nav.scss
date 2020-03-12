@@ -9,16 +9,17 @@
     transform: translateZ(0);
     visibility: hidden;
     opacity: 0;
-    transition: transform .6s, opacity .3s, visibility 0s linear .6s;
-
+    transition: transform 0.6s, opacity 0.3s, visibility 0s linear 0.6s;
+    @include breakpoint(small-mobile) {
+        width: 90%;
+    }
     .menu-open & {
         transform: translateZ(0) translateX(-100%);
         visibility: visible;
         opacity: 1;
-        transition: all .6s;
+        transition: all 0.6s;
     }
 }
-
 
 .overlay {
     z-index: 999;
@@ -27,50 +28,64 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(black, .6);
+    background-color: rgba(black, 0.6);
     visibility: hidden;
     opacity: 0;
-    transition: opacity .3s, visibility 0s linear .3s;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
     .menu-open & {
         opacity: 1;
         visibility: visible;
-        transition: all .3s;
+        transition: all 0.3s;
     }
 }
-
 
 .main-nav__inner {
     height: 100%;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     padding-left: 13rem;
-    padding-bottom: 4rem;
+
+    @include breakpoint(small-mobile) {
+        padding-bottom: 0;
+        padding-left: 3rem;
+    }
 }
 
-.main-nav__list {
+.main-nav__content {
     min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 16rem;
+    padding-bottom: 4rem;
+    @include breakpoint(small-mobile) {
+        padding-top: 9rem;
+        padding-bottom: 4rem;
+    }
 }
-
-
+.main-nav__list {
+    margin-top: 3rem;
+}
 
 .main-nav__list-item {
     margin-bottom: 3rem;
+    @include breakpoint(small-mobile) {
+        margin-bottom: 2rem;
+    }
     &:last-child {
         margin-bottom: 0;
     }
 }
 
-
 .main-nav__link {
     font-size: 3.6rem;
     font-weight: 800;
-    transition: color .2s;
+    transition: color 0.2s;
     @include breakpoint(large-desktop) {
         font-size: 3rem;
+    }
+    @include breakpoint(small-mobile) {
+        font-size: 1.9rem;
     }
     &:link,
     &:visited {
@@ -79,5 +94,76 @@
 
     &:hover {
         color: var(--light-blue);
+    }
+}
+
+.main-nav__request-call-btn {
+    font-weight: 800;
+    font-size: 1.5rem;
+    border-radius: 0.8rem;
+    padding: 2rem 4.2rem;
+    background-color: var(--light-blue);
+    align-self: flex-start;
+    transition: background-color 0.2s;
+    position: relative;
+    z-index: 1100;
+    display: none;
+    text-align: center;
+    margin-top: 4rem;
+    @include breakpoint(mobile) {
+        display: inline-block;
+    }
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+    &:hover {
+        background-color: var(--blue-hover);
+    }
+    &:active {
+        background-color: var(--blue-active);
+    }
+}
+
+.main-nav__contacts {
+    text-align: left;
+    margin-top: 2.5rem;
+    display: none;
+    @include breakpoint(mobile) {
+        display: block;
+    }
+}
+
+.main-nav__contacts-phone {
+    font-weight: 800;
+    font-size: 1.9rem;
+    transition: color 0.2s;
+    display: block;
+    margin-bottom: 0.5rem;
+
+    &:link,
+    &:visited {
+        color: black;
+    }
+
+    &:hover {
+        color: var(--light-blue);
+    }
+}
+
+.main-nav__contacts-email {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    transition: color 0.2s;
+    display: block;
+    &:link,
+    &:visited {
+        color: var(--light-blue);
+    }
+
+    &:hover {
+        color: var(--light-blue);
+        text-decoration: none;
     }
 }

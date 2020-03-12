@@ -1,5 +1,13 @@
 .apply {
     padding-top: 9rem;
+    @include breakpoint(tablet) {
+        padding-top: 6rem;
+    }
+
+
+    @include breakpoint(small-mobile) {
+        padding-top: 4.5rem;
+    }
 }
 
 
@@ -11,6 +19,10 @@
     font-size: 3.6rem;
     font-weight: 800;
     margin-bottom: 2rem;
+    @include breakpoint(small-mobile) {
+        font-size: 2.4rem;
+        margin-bottom: 1.8rem;
+    }
 }
 
 
@@ -18,24 +30,47 @@
     font-size: 1.6rem;
     color: #555555;
     line-height: 1.75;
+    @include breakpoint(small-mobile) {
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
 }
 
 
 .apply__content {
     display: flex;
     margin-bottom: 10rem;
+    @include breakpoint(laptop) {
+        margin-bottom: 8rem;
+    }
+    @include breakpoint(tablet) {
+        margin-bottom: 6rem;
+    }
+    @include breakpoint(small-mobile) {
+        display: block;
+        margin-bottom: 3rem;
+    }
 }
 
 
 .apply__left-column {
     width: 50%;
     flex-grow: 1;
+    @include breakpoint(small-mobile) {
+        width: 100%;
+        flex-grow: 0;
+    }
 }
 .apply__right-column {
     width: 45rem;
     flex-shrink: 0;
     margin-left: 4.5rem;
     position: relative;
+    @include breakpoint(small-mobile) {
+        width: 100%;
+        margin-left: 0;
+        flex-shrink: 1;
+    }
 }
 
 
