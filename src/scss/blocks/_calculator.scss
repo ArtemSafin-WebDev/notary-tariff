@@ -204,6 +204,7 @@
 .calculator__radio-group-content {
     display: flex;
     align-items: center;
+    background-color: white;
 }
 
 .calculator__radio-mark {
@@ -227,6 +228,12 @@
         transition: opacity 0.2s, transform 0.2s;
         transform: translate(-50%, -50%) scale(0);
     }
+}
+
+
+.calculator__radio-input:checked ~ .calculator__radio-group-content {
+    // background-color: white;
+    backface-visibility: hidden;
 }
 
 .calculator__radio-input:checked ~ .calculator__radio-group-content .calculator__radio-mark {

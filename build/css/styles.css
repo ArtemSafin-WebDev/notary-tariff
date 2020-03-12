@@ -2842,7 +2842,8 @@ img.lazyload:not([src]) {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background-color: white; }
 
 .calculator__radio-mark {
   width: 2.8rem;
@@ -2869,6 +2870,10 @@ img.lazyload:not([src]) {
     transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s;
     -webkit-transform: translate(-50%, -50%) scale(0);
             transform: translate(-50%, -50%) scale(0); }
+
+.calculator__radio-input:checked ~ .calculator__radio-group-content {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
 
 .calculator__radio-input:checked ~ .calculator__radio-group-content .calculator__radio-mark::before {
   opacity: 1;
