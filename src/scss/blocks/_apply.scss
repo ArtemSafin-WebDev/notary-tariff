@@ -5,7 +5,7 @@
     }
 
 
-    @include breakpoint(small-mobile) {
+    @include breakpoint(mobile) {
         padding-top: 4.5rem;
     }
 }
@@ -19,7 +19,7 @@
     font-size: 3.6rem;
     font-weight: 800;
     margin-bottom: 2rem;
-    @include breakpoint(small-mobile) {
+    @include breakpoint(mobile) {
         font-size: 2.4rem;
         margin-bottom: 1.8rem;
     }
@@ -30,7 +30,7 @@
     font-size: 1.6rem;
     color: #555555;
     line-height: 1.75;
-    @include breakpoint(small-mobile) {
+    @include breakpoint(mobile) {
         font-size: 1.4rem;
         line-height: 1.5;
     }
@@ -46,7 +46,7 @@
     @include breakpoint(tablet) {
         margin-bottom: 6rem;
     }
-    @include breakpoint(small-mobile) {
+    @include breakpoint(mobile) {
         display: block;
         margin-bottom: 3rem;
     }
@@ -56,7 +56,7 @@
 .apply__left-column {
     width: 50%;
     flex-grow: 1;
-    @include breakpoint(small-mobile) {
+    @include breakpoint(mobile) {
         width: 100%;
         flex-grow: 0;
     }
@@ -66,19 +66,55 @@
     flex-shrink: 0;
     margin-left: 4.5rem;
     position: relative;
-    @include breakpoint(small-mobile) {
+    display: flex;
+    @include breakpoint(mobile) {
         width: 100%;
         margin-left: 0;
         flex-shrink: 1;
+        margin-top: 3rem;
     }
 }
 
+// .apply__btn {
+//     margin-left: auto;
+//     font-weight: 800;
+//     font-size: 1.5rem;
+//     border-radius: 0.8rem;
+//     padding: 2rem 4.2rem;
+//     background-color: var(--light-blue);
+//     transition: background-color 0.2s;
+//     position: relative;
+//     z-index: 1100;
+//     text-align: center;
+//     align-self: flex-start;
+//     &:link,
+//     &:visited {
+//         color: white;
+//     }
+
+//     &:hover {
+//         background-color: var(--blue-hover);
+//     }
+//     &:active {
+//         background-color: var(--blue-active);
+//     }
+// }
 
 .apply__widget-wrapper {
     position: absolute;
     left: 0;
     width: 100%;
     top: 0;
+    z-index: 1500;
+
+    .application-widget__close {
+        visibility: hidden;
+    }
+   
+    @include breakpoint(mobile) {
+        display: block;
+        position: static;
+    }
 }
 
 

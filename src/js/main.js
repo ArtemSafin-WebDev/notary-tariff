@@ -5,6 +5,7 @@ import rangeSliders from './rangeSliders';
 import accordions from './accordions';
 import modals from './modals';
 import forms from './forms';
+import widget from './widget';
 
 document.addEventListener('DOMContentLoaded', function() {
     if (window.matchMedia('(max-width: 768px)').matches) {
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     accordions();
     modals();
     forms();
+    widget();
 });
 
 window.addEventListener('load', function() {

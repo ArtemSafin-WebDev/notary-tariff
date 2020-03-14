@@ -3065,7 +3065,7 @@ img.lazyload:not([src]) {
   @media only screen and (max-width: 1024px) {
     .apply {
       padding-top: 6rem; } }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 768px) {
     .apply {
       padding-top: 4.5rem; } }
 
@@ -3076,7 +3076,7 @@ img.lazyload:not([src]) {
   font-size: 3.6rem;
   font-weight: 800;
   margin-bottom: 2rem; }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 768px) {
     .apply__heading {
       font-size: 2.4rem;
       margin-bottom: 1.8rem; } }
@@ -3085,7 +3085,7 @@ img.lazyload:not([src]) {
   font-size: 1.6rem;
   color: #555555;
   line-height: 1.75; }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 768px) {
     .apply__text-block-info {
       font-size: 1.4rem;
       line-height: 1.5; } }
@@ -3101,7 +3101,7 @@ img.lazyload:not([src]) {
   @media only screen and (max-width: 1024px) {
     .apply__content {
       margin-bottom: 6rem; } }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 768px) {
     .apply__content {
       display: block;
       margin-bottom: 3rem; } }
@@ -3111,7 +3111,7 @@ img.lazyload:not([src]) {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1; }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 768px) {
     .apply__left-column {
       width: 100%;
       -webkit-box-flex: 0;
@@ -3123,19 +3123,30 @@ img.lazyload:not([src]) {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-left: 4.5rem;
-  position: relative; }
-  @media only screen and (max-width: 576px) {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media only screen and (max-width: 768px) {
     .apply__right-column {
       width: 100%;
       margin-left: 0;
       -ms-flex-negative: 1;
-          flex-shrink: 1; } }
+          flex-shrink: 1;
+      margin-top: 3rem; } }
 
 .apply__widget-wrapper {
   position: absolute;
   left: 0;
   width: 100%;
-  top: 0; }
+  top: 0;
+  z-index: 1500; }
+  .apply__widget-wrapper .application-widget__close {
+    visibility: hidden; }
+  @media only screen and (max-width: 768px) {
+    .apply__widget-wrapper {
+      display: block;
+      position: static; } }
 
 .apply__image-block {
   height: 50rem;

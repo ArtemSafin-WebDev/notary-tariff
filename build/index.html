@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/widget/css/vendor.css" />
+        <link rel="stylesheet" href="assets/widget/css/widget.css" />
         <link rel="stylesheet" href="css/styles.min.css" />
         <title>
             Notary Tariff
@@ -449,7 +452,678 @@
                                 </div>
                             </div>
                             <div class="apply__right-column">
-                                <div class="apply__widget-wrapper"></div>
+                                <!-- <a href="#" class="apply__btn js-widget-open">
+                Записаться на прием
+            </a> -->
+                                <div class="apply__widget-wrapper">
+                                    <div class="application-widget js-application-widget">
+                                        <form class="application-widget__inner" action="/" method="POST">
+                                            <button class="application-widget__close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.9 11.9">
+                                                    <path d="M7.36 6l4.25-4.24A1 1 0 0010.19.29L6 4.54 1.71.29A1 1 0 00.29 1.71L4.54 6 .29 10.19a1 1 0 000 1.42 1 1 0 001.42 0L6 7.36l4.24 4.25a1 1 0 001.42 0 1 1 0 000-1.42z" />
+                                                </svg>
+                                            </button>
+                                            <div class="application-widget__top-navigation">
+                                                <h4 class="application-widget__heading">
+                                                    Запись на приём
+                                                </h4>
+                                                <div class="application-widget__nav">
+                                                    <button class="application-widget__nav-back">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 13">
+                                                            <path d="M.29 5.79a1 1 0 000 1.42l5.5 5.5a1 1 0 101.42-1.42L3.41 7.5H19a1 1 0 000-2H3.41l3.8-3.79A1 1 0 005.79.29z" fill-rule="evenodd" />
+                                                        </svg>
+                                                    </button>
+                                                    <span class="application-widget__nav-action">
+                                                        Выберите станцию метро
+                                                    </span>
+                                                    <span class="application-widget__nav-pagination">
+                                                        1/4
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="application-widget__content-area">
+                                                <div class="application-widget__content-block active">
+                                                    <div class="application-widget__scroll-container">
+                                                        <div class="application-widget__stations">
+                                                            <div class="application-widget__stations-group">
+                                                                <label class="application-widget__stations-checkbox">
+                                                                    <input type="radio" name="metro" class="application-widget__stations-checkbox-input" />
+                                                                    <span class="application-widget__stations-checkbox-content">
+                                                                        <span class="application-widget__stations-checkbox-color" style="color: #EF1E25;"> </span>
+                                                                        <span class="application-widget__stations-checkbox-text">
+                                                                            Бульвар Рокоссовского
+                                                                        </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="application-widget__stations-group">
+                                                                <label class="application-widget__stations-checkbox">
+                                                                    <input type="radio" name="metro" class="application-widget__stations-checkbox-input" />
+                                                                    <span class="application-widget__stations-checkbox-content">
+                                                                        <span class="application-widget__stations-checkbox-color" style="color: #029A55;"> </span>
+                                                                        <span class="application-widget__stations-checkbox-text">
+                                                                            Ховрино
+                                                                        </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="application-widget__stations-group">
+                                                                <label class="application-widget__stations-checkbox">
+                                                                    <input type="radio" name="metro" class="application-widget__stations-checkbox-input" />
+                                                                    <span class="application-widget__stations-checkbox-content">
+                                                                        <span class="application-widget__stations-checkbox-color" style="color: #0252A2;"> </span>
+                                                                        <span class="application-widget__stations-checkbox-text">
+                                                                            Пятницкое шоссе
+                                                                        </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="application-widget__stations-group">
+                                                                <label class="application-widget__stations-checkbox">
+                                                                    <input type="radio" name="metro" class="application-widget__stations-checkbox-input" />
+                                                                    <span class="application-widget__stations-checkbox-content">
+                                                                        <span class="application-widget__stations-checkbox-color" style="color: #019EE0;"> </span>
+                                                                        <span class="application-widget__stations-checkbox-text">
+                                                                            Кунцевская
+                                                                        </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="application-widget__stations-group">
+                                                                <label class="application-widget__stations-checkbox">
+                                                                    <input type="radio" name="metro" class="application-widget__stations-checkbox-input" />
+                                                                    <span class="application-widget__stations-checkbox-content">
+                                                                        <span class="application-widget__stations-checkbox-color" style="color: #745C2F;"> </span>
+                                                                        <span class="application-widget__stations-checkbox-text">
+                                                                            Белорусская
+                                                                        </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="application-widget__stations-group">
+                                                                <label class="application-widget__stations-checkbox">
+                                                                    <input type="radio" name="metro" class="application-widget__stations-checkbox-input" />
+                                                                    <span class="application-widget__stations-checkbox-content">
+                                                                        <span class="application-widget__stations-checkbox-color" style="color: #FBAA33;"> </span>
+                                                                        <span class="application-widget__stations-checkbox-text">
+                                                                            Медведково
+                                                                        </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="application-widget__stations-group">
+                                                                <label class="application-widget__stations-checkbox">
+                                                                    <input type="radio" name="metro" class="application-widget__stations-checkbox-input" />
+                                                                    <span class="application-widget__stations-checkbox-content">
+                                                                        <span class="application-widget__stations-checkbox-color" style="color: #B61D8E;"> </span>
+                                                                        <span class="application-widget__stations-checkbox-text">
+                                                                            Планерная
+                                                                        </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="application-widget__stations-group">
+                                                                <label class="application-widget__stations-checkbox">
+                                                                    <input type="radio" name="metro" class="application-widget__stations-checkbox-input" />
+                                                                    <span class="application-widget__stations-checkbox-content">
+                                                                        <span class="application-widget__stations-checkbox-color" style="color: #FFD803;"> </span>
+                                                                        <span class="application-widget__stations-checkbox-text">
+                                                                            Новокосино
+                                                                        </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="application-widget__stations-group">
+                                                                <label class="application-widget__stations-checkbox">
+                                                                    <input type="radio" name="metro" class="application-widget__stations-checkbox-input" />
+                                                                    <span class="application-widget__stations-checkbox-content">
+                                                                        <span class="application-widget__stations-checkbox-color" style="color: #FBAA33;"> </span>
+                                                                        <span class="application-widget__stations-checkbox-text">
+                                                                            Медведково
+                                                                        </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="application-widget__stations-group">
+                                                                <label class="application-widget__stations-checkbox">
+                                                                    <input type="radio" name="metro" class="application-widget__stations-checkbox-input" />
+                                                                    <span class="application-widget__stations-checkbox-content">
+                                                                        <span class="application-widget__stations-checkbox-color" style="color: #B61D8E;"> </span>
+                                                                        <span class="application-widget__stations-checkbox-text">
+                                                                            Планерная
+                                                                        </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="application-widget__stations-group">
+                                                                <label class="application-widget__stations-checkbox">
+                                                                    <input type="radio" name="metro" class="application-widget__stations-checkbox-input" />
+                                                                    <span class="application-widget__stations-checkbox-content">
+                                                                        <span class="application-widget__stations-checkbox-color" style="color: #FFD803;"> </span>
+                                                                        <span class="application-widget__stations-checkbox-text">
+                                                                            Новокосино
+                                                                        </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="application-widget__content-block">
+                                                    <div class="application-widget__scroll-container">
+                                                        <div class="application-widget__notary">
+                                                            <div class="application-widget__notary-group">
+                                                                <label class="application-widget__notary-checkbox">
+                                                                    <input type="radio" name="notary" id="" class="application-widget__checkbox-input" />
+                                                                    <span class="application-widget__notary-checkbox-content">
+                                                                        <span class="application-widget__notary-checkbox-content-name">
+                                                                            Щекочихина Светлана Анатольевна
+                                                                        </span>
+                                                                        <span class="application-widget__notary-checkbox-content-info">
+                                                                            Кастанаевская улица, дом 58<br />
+                                                                            +7 (495) 440-37-47
+                                                                        </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="application-widget__notary-group">
+                                                                <label class="application-widget__notary-checkbox">
+                                                                    <input type="radio" name="notary" id="" class="application-widget__checkbox-input" />
+                                                                    <span class="application-widget__notary-checkbox-content">
+                                                                        <span class="application-widget__notary-checkbox-content-name">
+                                                                            Щекочихина Светлана Анатольевна
+                                                                        </span>
+                                                                        <span class="application-widget__notary-checkbox-content-info">
+                                                                            Кастанаевская улица, дом 58<br />
+                                                                            +7 (495) 440-37-47
+                                                                        </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="application-widget__notary-group">
+                                                                <label class="application-widget__notary-checkbox">
+                                                                    <input type="radio" name="notary" id="" class="application-widget__checkbox-input" />
+                                                                    <span class="application-widget__notary-checkbox-content">
+                                                                        <span class="application-widget__notary-checkbox-content-name">
+                                                                            Щекочихина Светлана Анатольевна
+                                                                        </span>
+                                                                        <span class="application-widget__notary-checkbox-content-info">
+                                                                            Кастанаевская улица, дом 58<br />
+                                                                            +7 (495) 440-37-47
+                                                                        </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="application-widget__notary-group">
+                                                                <label class="application-widget__notary-checkbox">
+                                                                    <input type="radio" name="notary" id="" class="application-widget__checkbox-input" />
+                                                                    <span class="application-widget__notary-checkbox-content">
+                                                                        <span class="application-widget__notary-checkbox-content-name">
+                                                                            Щекочихина Светлана Анатольевна
+                                                                        </span>
+                                                                        <span class="application-widget__notary-checkbox-content-info">
+                                                                            Кастанаевская улица, дом 58<br />
+                                                                            +7 (495) 440-37-47
+                                                                        </span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="application-widget__content-block">
+                                                    <div class="application-widget__scroll-container">
+                                                        <div class="application-widget__schedule">
+                                                            <div class="application-widget__schedule-group">
+                                                                <div class="application-widget__schedule-group-day">
+                                                                    <span class="application-widget__schedule-group-day-name">
+                                                                        Сегодня
+                                                                    </span>
+                                                                    <span class="application-widget__schedule-group-day-date">
+                                                                        10 января
+                                                                    </span>
+                                                                </div>
+                                                                <div class="application-widget__schedule-group-time">
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                10:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                10:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                11:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" disabled />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                11:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" disabled />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                13:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                13:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                14:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                14:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                15:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                15:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                16:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                16:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                17:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                17:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="application-widget__schedule-group">
+                                                                <div class="application-widget__schedule-group-day">
+                                                                    <span class="application-widget__schedule-group-day-name">
+                                                                        Понедельник
+                                                                    </span>
+                                                                    <span class="application-widget__schedule-group-day-date">
+                                                                        13 января
+                                                                    </span>
+                                                                </div>
+                                                                <div class="application-widget__schedule-group-time">
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                10:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                10:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                11:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" disabled />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                11:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" disabled />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                13:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                13:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                14:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                14:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                15:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                15:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                16:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                16:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                17:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                17:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="application-widget__schedule-group">
+                                                                <div class="application-widget__schedule-group-day">
+                                                                    <span class="application-widget__schedule-group-day-name">
+                                                                        Среда
+                                                                    </span>
+                                                                    <span class="application-widget__schedule-group-day-date">
+                                                                        15 января
+                                                                    </span>
+                                                                </div>
+                                                                <div class="application-widget__schedule-group-time">
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                10:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                10:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                11:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" disabled />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                11:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" disabled />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                13:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                13:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                14:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                14:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                15:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                15:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                16:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                16:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                17:00
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="application-widget__schedule-group-time-group">
+                                                                        <label class="application-widget__schedule-group-time-checkbox">
+                                                                            <input type="radio" name="time1" class="application-widget__schedule-group-checkbox-input" />
+                                                                            <span class="application-widget__schedule-group-checkbox-content">
+                                                                                17:30
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="application-widget__content-block">
+                                                    <div class="application-widget__contacts">
+                                                        <div class="application-widget__contacts-row">
+                                                            <label class="application-widget__contacts-group">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 20" width="15" height="20" class="application-widget__contacts-icon">
+                                                                    <path
+                                                                        d="M13.37 14.3l-3.11-1.6a.88.88 0 01-.48-.78v-1.13a3 3 0 00.24-.32 7.91 7.91 0 001-1.93 1.33 1.33 0 00.76-1.21V6a1.37 1.37 0 00-.33-.88V3.35a3 3 0 00-.68-2.17A4.06 4.06 0 007.5 0a4.06 4.06 0 00-3.23 1.18 3 3 0 00-.68 2.17v1.77a1.37 1.37 0 00-.33.88v1.33a1.33 1.33 0 00.49 1 7 7 0 001.14 2.41v1.11a.88.88 0 01-.45.77l-2.91 1.66A3 3 0 000 16.92V18c0 1.58 4.91 2 7.5 2s7.5-.42 7.5-2v-1a3 3 0 00-1.63-2.7z"
+                                                                    />
+                                                                </svg>
+                                                                <input type="text" name="name" class="application-widget__contacts-input" placeholder="Имя" required />
+
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" width="8" height="8" class="application-widget__contacts-required">
+                                                                    <path
+                                                                        d="M2.83 7.55L4 5.8l1.17 1.75a1 1 0 001.66-1.1L5.71 4.76l1.74-.87a1 1 0 00-.9-1.78L5 2.88V1a1 1 0 00-2 0v1.88l-1.55-.77a1 1 0 10-.9 1.78l1.74.87-1.12 1.69a1 1 0 101.66 1.1z"
+                                                                        fill-rule="evenodd"
+                                                                    />
+                                                                </svg>
+                                                            </label>
+                                                        </div>
+                                                        <div class="application-widget__contacts-row">
+                                                            <label class="application-widget__contacts-group">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18" class="application-widget__contacts-icon">
+                                                                    <path
+                                                                        d="M17.6 14.24l-2.78-2.79a1.45 1.45 0 00-2.05 0l-1.4 1.4-.27-.15a13.92 13.92 0 01-3.37-2.4 13.87 13.87 0 01-2.44-3.39 1.82 1.82 0 01-.15-.27l.94-.94.46-.46a1.46 1.46 0 000-2.05L3.8.4a1.46 1.46 0 00-2 0l-.8.83A5 5 0 00.34 2.4a4.49 4.49 0 00-.28 1.15c-.37 3.05 1 5.84 4.79 9.62C10.07 18.4 14.27 18 14.46 18a4.76 4.76 0 001.15-.3 4.53 4.53 0 001.14-.64l.79-.78a1.46 1.46 0 00.06-2.04z"
+                                                                    />
+                                                                </svg>
+                                                                <input type="tel" name="phone" class="application-widget__contacts-input" placeholder="Телефон" required data-parsley-phone="" />
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" width="8" height="8" class="application-widget__contacts-required">
+                                                                    <path
+                                                                        d="M2.83 7.55L4 5.8l1.17 1.75a1 1 0 001.66-1.1L5.71 4.76l1.74-.87a1 1 0 00-.9-1.78L5 2.88V1a1 1 0 00-2 0v1.88l-1.55-.77a1 1 0 10-.9 1.78l1.74.87-1.12 1.69a1 1 0 101.66 1.1z"
+                                                                        fill-rule="evenodd"
+                                                                    />
+                                                                </svg>
+                                                            </label>
+                                                        </div>
+                                                        <div class="application-widget__contacts-row">
+                                                            <label class="application-widget__contacts-group">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 14.14" class="application-widget__contacts-icon">
+                                                                    <path
+                                                                        d="M16.39 14.14a1.56 1.56 0 001.06-.39l-5.1-5.1c-.13.08-.24.17-.36.25q-.57.42-.93.66a5.52 5.52 0 01-1 .48 2.94 2.94 0 01-1.1.25H9A3 3 0 017.88 10a5.76 5.76 0 01-.94-.48q-.36-.2-.94-.62l-.36-.26-5.09 5.11a1.56 1.56 0 001.06.39zM1 5.43a5 5 0 01-1-.87v7.76l4.49-4.5C3.6 7.2 2.44 6.4 1 5.43zM17 5.43c-1.37.93-2.54 1.73-3.49 2.4L18 12.32V4.56a5.63 5.63 0 01-1 .87z"
+                                                                    />
+                                                                    <path
+                                                                        d="M16.39 0H1.61A1.41 1.41 0 00.42.52 2 2 0 000 1.83 2.33 2.33 0 00.55 3.2a5 5 0 001.18 1.16l2.06 1.43L5.4 6.91l1 .71.15.11.28.2c.21.16.39.28.54.38s.32.21.52.33a3 3 0 00.58.27A1.61 1.61 0 009 9a1.61 1.61 0 00.5-.09 3 3 0 00.58-.27c.2-.12.38-.23.52-.33s.33-.22.54-.38l.28-.2.15-.11 1-.7 3.68-2.56a4.68 4.68 0 001.23-1.24A2.61 2.61 0 0018 1.61a1.56 1.56 0 00-.48-1.14A1.56 1.56 0 0016.39 0z"
+                                                                    />
+                                                                </svg>
+                                                                <input type="email" name="email" class="application-widget__contacts-input" placeholder="E-mail" required />
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" width="8" height="8" class="application-widget__contacts-required">
+                                                                    <path
+                                                                        d="M2.83 7.55L4 5.8l1.17 1.75a1 1 0 001.66-1.1L5.71 4.76l1.74-.87a1 1 0 00-.9-1.78L5 2.88V1a1 1 0 00-2 0v1.88l-1.55-.77a1 1 0 10-.9 1.78l1.74.87-1.12 1.69a1 1 0 101.66 1.1z"
+                                                                        fill-rule="evenodd"
+                                                                    />
+                                                                </svg>
+                                                            </label>
+                                                        </div>
+                                                        <div class="application-widget__contacts-row">
+                                                            <label class="application-widget__contacts-group">
+                                                                <textarea name="message" class="application-widget__contacts-textarea" placeholder="Сообщение"></textarea>
+                                                            </label>
+                                                        </div>
+                                                        <div class="application-widget__contacts-privacy-policy">
+                                                            <p>Нажимая кнопку «Записаться», вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="#">Политикой конфиденциальности</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <button type="submit" class="application-widget__main-btn">
+                                                <span class="application-widget__main-btn-text">
+                                                    Следующий шаг
+                                                </span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="apply__image-block">
@@ -679,6 +1353,8 @@
                 </div>
             </div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="assets/widget/js/vendor.js"></script>
+            <script src="assets/widget/js/widget.js"></script>
             <script src="js/app.js"></script>
         </div>
     </body>
