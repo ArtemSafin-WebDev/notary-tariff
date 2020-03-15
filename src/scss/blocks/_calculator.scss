@@ -133,7 +133,6 @@
     flex-grow: 1;
     font-size: 1.2rem;
     line-height: 1.5;
-    
 }
 
 .calculator__form-btn {
@@ -166,6 +165,7 @@
 
 .calculator__input-group {
     margin-bottom: 2rem;
+    transition: opacity 0.2s;
     &:last-child {
         margin-bottom: 0;
     }
@@ -230,7 +230,6 @@
     }
 }
 
-
 .calculator__radio-input:checked ~ .calculator__radio-group-content {
     // background-color: white;
     backface-visibility: hidden;
@@ -251,33 +250,51 @@
     line-height: 1.5;
 }
 
-
-
 .calculator__range-slider-wrapper {
     border-radius: 0.8rem;
     border: 1px solid #ebebeb;
-    .noUi-connects, .noUi-target {
-        border-bottom-left-radius: .8rem;
-        border-bottom-right-radius: .8rem;
+    .noUi-connects,
+    .noUi-target {
+        border-bottom-left-radius: 0.8rem;
+        border-bottom-right-radius: 0.8rem;
     }
 }
-
 
 .calculator__range-slider-price {
     font-size: 1.4rem;
     color: #555555;
     padding: 1.65rem 2rem;
-   
 }
 
 .calculator__range-input {
     @include visuallyHidden();
 }
 
-._no-marry {
-    transition: opacity .2s;
+._only-marry {
+    opacity: 0.3;
+    pointer-events: none;
 }
 ._marry-contract ._no-marry {
-    opacity: .3;
+    opacity: 0.3;
     pointer-events: none;
+}
+
+._marry-contract ._only-marry {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+._share ._no-share {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+._only-share {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+._share ._only-share {
+    opacity: 1;
+    pointer-events: initial;
 }

@@ -12,7 +12,6 @@ export default function() {
     const propertyTypeRadios = Array.from(calculator.querySelectorAll('input[name="property"][type="radio"]'));
     const priceElement = calculator.querySelector('.calculator__form-price');
 
-
     function shareSellCost(cost, side) {
         var c = -1;
         var z = 0;
@@ -89,8 +88,14 @@ export default function() {
 
     function handleActivity() {
         const contractType = contractTypeElement.value;
+        const subject = subjectRadios.find(element => element.checked).value;
         if (contractType === 'buy' || contractType === 'gift') {
             calculator.classList.remove('_marry-contract');
+            if (subject === 'real-estate') {
+                calculator.classList.remove('_share');
+            } else if (subject === 'share') {
+                calculator.classList.add('_share');
+            }
         } else if (contractType === 'marry') {
             calculator.classList.add('_marry-contract');
         }
@@ -133,6 +138,7 @@ export default function() {
     objectsCountElement.addEventListener('rangeupdate', calculate);
     contractTypeElement.addEventListener('choose', calculate);
     subjectRadios.forEach(radio => radio.addEventListener('change', calculate));
+    subjectRadios.forEach(radio => radio.addEventListener('change', handleActivity));
     contractTypeElement.addEventListener('choose', handleActivity);
     relationRadios.forEach(radio => radio.addEventListener('change', calculate));
     propertyTypeRadios.forEach(radio => radio.addEventListener('change', calculate));
