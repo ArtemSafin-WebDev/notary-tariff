@@ -27,7 +27,9 @@ export default function() {
 
         sliderElement.noUiSlider.on('update', function() {
             const value = parseInt(sliderElement.noUiSlider.get(), 10);
+            const event = new CustomEvent('rangeupdate', { value });
             input.value = value;
+            input.dispatchEvent(event);
             priceElement.textContent = value.toLocaleString();
         });
     });

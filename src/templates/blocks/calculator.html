@@ -15,15 +15,16 @@
                         Тип договора
                     </h4>
                     <div class="calculator__select">
-                        <select name="type" class="js-custom-select" data-placeholder="Выберите тип договора">
-                            <option value="value1" selected>Договор купли-продажи</option>
-                            <option value="value2">Договор дарения</option>
+                        <select name="type" class="js-custom-select" data-placeholder="Выберите тип договора" id="contract-type">
+                            <option value="buy" selected>Договор купли-продажи</option>
+                            <option value="gift">Договор дарения</option>
+                            <option value="marry">Брачный договор</option>
                         </select>
                     </div>
                 </div>
-                <div class="calculator__input-group">
+                <div class="calculator__input-group _no-marry">
                     <h4 class="calculator__input-group-heading">
-                        Субъект сделки
+                        Объект сделки
                     </h4>
                     <div class="calculator__radios">
                         <label class="calculator__radio-group">
@@ -47,18 +48,19 @@
                     </div>
                 </div>
 
-                <div class="calculator__input-group">
+                <div class="calculator__input-group _no-marry">
                     <h4 class="calculator__input-group-heading">
                         Стороны договора
                     </h4>
                     <div class="calculator__select">
-                        <select name="side" class="js-custom-select" data-placeholder="Выберите сторону договора">
-                            <option value="value1" selected>Только физические лица</option>
-                            <option value="value2">Юридические лица</option>
+                        <select name="side" class="js-custom-select" data-placeholder="Выберите сторону договора" id="sides">
+                            <option value="physical" selected>Только физические лица</option>
+                            <option value="company">Одна из сторон юрлицо</option>
+                            <option value="nonresident">Одна из сторон юрлицо-нерезидент</option>
                         </select>
                     </div>
                 </div>
-                <div class="calculator__input-group">
+                <div class="calculator__input-group _no-marry">
                     <h4 class="calculator__input-group-heading">
                         Родство
                     </h4>
@@ -83,12 +85,12 @@
                         </label>
                     </div>
                 </div>
-                <div class="calculator__input-group">
+                <div class="calculator__input-group _no-marry">
                     <h4 class="calculator__input-group-heading">
                         Стоимость указанная в договоре, ₽
                     </h4>
                     <div class="calculator__range-slider js-range-slider">
-                        <input type="range" name="price" class="calculator__range-input" min="0" max="120000" step="1000" value="60000">
+                        <input type="range" name="price" class="calculator__range-input" min="0" max="100000000" step="1000" value="5000000" id="cost">
                         <div class="calculator__range-slider-wrapper">
                             <div class="calculator__range-slider-price">
                                 
@@ -99,6 +101,21 @@
                     </div>
                 </div>
                 <div class="calculator__input-group">
+                    <h4 class="calculator__input-group-heading">
+                        Количество объектов недвижимости
+                    </h4>
+                    <div class="calculator__range-slider js-range-slider">
+                        <input type="range" name="objects-count" class="calculator__range-input" min="0" max="8" step="1" value="1" id="objects-count">
+                        <div class="calculator__range-slider-wrapper">
+                            <div class="calculator__range-slider-price">
+                                
+                            </div>
+                            <div class="calculator__range-slider"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="calculator__input-group _no-marry">
                     <h4 class="calculator__input-group-heading">
                         Вид собственности
                     </h4>

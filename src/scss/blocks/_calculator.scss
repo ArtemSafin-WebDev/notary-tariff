@@ -273,3 +273,11 @@
 .calculator__range-input {
     @include visuallyHidden();
 }
+
+._no-marry {
+    transition: opacity .2s;
+}
+._marry-contract ._no-marry {
+    opacity: .3;
+    pointer-events: none;
+}

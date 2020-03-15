@@ -2912,6 +2912,14 @@ img.lazyload:not([src]) {
   width: 1px;
   white-space: nowrap; }
 
+._no-marry {
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s; }
+
+._marry-contract ._no-marry {
+  opacity: .3;
+  pointer-events: none; }
+
 .faq {
   padding: 11rem 0;
   position: relative;

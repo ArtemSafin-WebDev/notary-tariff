@@ -6,6 +6,7 @@ import accordions from './accordions';
 import modals from './modals';
 import forms from './forms';
 import widget from './widget';
+import calculator from './calculator';
 
 document.addEventListener('DOMContentLoaded', function() {
     if (window.matchMedia('(max-width: 768px)').matches) {
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     modals();
     forms();
     widget();
+    calculator();
 });
 
 window.addEventListener('load', function() {
