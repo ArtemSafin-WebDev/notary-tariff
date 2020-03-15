@@ -5,7 +5,6 @@ import rangeSliders from './rangeSliders';
 import accordions from './accordions';
 import modals from './modals';
 import forms from './forms';
-import widget from './widget';
 import calculator from './calculator';
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -24,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
     accordions();
     modals();
     forms();
-    widget();
     calculator();
 });
 
